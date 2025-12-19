@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: default
+    tables:
+       - name: raw_customers__dll
+         description: "Customers raw table stored in default dataspace"   
+         columns:
+            - name: id__c 
+              description: "Customer ID"
+              data_tests:
+                - not_null
+                - unique
+            - name: first_name__c
+              description: "Customer first name"
+            - name: last_name__c
+              description: "Customer last name"
+            - name: email__c
+              description: "Customer email address"
+              data_tests:
+                - not_null
+                - unique
+            
