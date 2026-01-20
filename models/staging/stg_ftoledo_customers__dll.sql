@@ -11,4 +11,4 @@
         last_name__c,
         email__c as customer_email__c
 
-    from {{ source('default', 'raw_customers__dll') }}
+    from {{ source('source1', 'raw_customers__dll') }}

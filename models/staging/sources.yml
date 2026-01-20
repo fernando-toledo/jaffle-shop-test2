@@ -1,7 +1,8 @@
 version: 2
 
 sources:
-  - name: default
+  - name: source1
+    schema: "salesforce_schema"
     tables:
        - name: raw_customers__dll
          description: "Customers raw table stored in default dataspace"   
