@@ -16,6 +16,7 @@ clean-targets:
   - "logs"
 
 models:
+  +static_analysis: off
   jaffle_shop:
     +materialized: table
 flags:
